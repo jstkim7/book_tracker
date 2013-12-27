@@ -17,37 +17,72 @@ body {
 }
 
 header {
-  width: 100%;
-  height: 100px;
   border-bottom: green solid 3px;
   background-color: #adde63;
+  height: 100px;
 }
 
+
 .identity {
+  width: 30%;
   height: 100px;
-  width: 210px;
-  background-color: white;
+  float: left;
 }
 
 .logo {
-  float: left;
-  margin-top: 25px;
-  margin-left: 10px;
   font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .slogan {
-  float: left;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
+.main-nav {
+  width: 70%;
+  float: left;
+}
 
+.main-nav ul {
+  margin-right: 20px;
+  padding-top: 60px;
+  float: right;
+}
 
+.main-nav li {
+  display: inline;
+}
 
+footer {
+  border-top: green solid 3px;
+  background-color: #adde63;
+  height: 200px;
+}
 
+small {
+  float: left;
+  width: 30%;
+}
 
+small p {
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
+footer nav {
+  float: left;
+  width: 70%;
+}
 
+footer ul {
+  float: right;
+  margin-top: 3px;
+  margin-right: 20px;
+}
 
+footer li {
+  display: inline;
+}
 
