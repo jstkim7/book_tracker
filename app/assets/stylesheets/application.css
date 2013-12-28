@@ -17,7 +17,7 @@
 body {
   margin: 0px;
   color: #5F1D2B;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Tahoma;
 }
 
 .main-header {
@@ -30,50 +30,5 @@ body {
   font-size: 13px;
   padding-top: 9px;
   padding-left: 11px;
-}
-
-.slogan {
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.main-nav {
-  width: 70%;
-  float: left;
-}
-
-.main-nav ul {
-  margin-right: 20px;
-  padding-top: 60px;
-  float: right;
-}
-
-.main-nav li {
-  display: inline;
-}
-
-small {
-  float: left;
-  width: 30%;
-}
-
-small p {
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-footer nav {
-  float: left;
-  width: 70%;
-}
-
-footer ul {
-  float: right;
-  margin-top: 3px;
-  margin-right: 20px;
-}
-
-footer li {
-  display: inline;
 }
 
