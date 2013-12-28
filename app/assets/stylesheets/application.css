@@ -27,10 +27,14 @@ body {
 }
 
 .logo {
+  padding-top: 5px;
+  padding-left: 11px;
+}
+
+.logo a {
   color: rgb(170, 170, 170);
   font-size: 13px;
-  padding-top: 9px;
-  padding-left: 11px;
+  text-decoration: none;
 }
 
 footer {

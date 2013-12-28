@@ -8,20 +8,26 @@
 }
 
 .bookshelf header {
+  margin-top: 20px;
   text-align: center;
   font-size: 51px;
 }
 
 .books {
-  padding: 20px;
   overflow: auto;
+  padding: 70px;
 }
 
 .h {
  background-color: rgb(217, 217, 220);
- width: 200px;
+ width: 175px;
  height: 210px;
  margin: 10px;
  float: left;
  border-left: 10px solid;
+}
+
+#new-book svg {
+  margin-left: 47px;
+  margin-top: 64px;
 }
