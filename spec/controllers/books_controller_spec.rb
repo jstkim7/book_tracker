@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe BookPagesController do
+describe BooksController do
 
   describe "GET 'index'" do
     it "returns http success" do
