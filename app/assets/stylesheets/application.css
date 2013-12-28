@@ -16,7 +16,7 @@ body {
   margin: 0px;
 }
 
-header {
+.main-header {
   border-bottom: green solid 3px;
   background-color: #adde63;
   height: 100px;
