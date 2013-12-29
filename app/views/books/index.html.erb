@@ -6,7 +6,7 @@
   <div class="books">
   <section>
     <% @books.each do |book| %>
-      <article class="h" >
+      <article class="h <%= @colors.next %>"  >
         <%= book.title %></br>
         <%= book.author %>
       </article>
@@ -17,5 +17,8 @@
       </svg>
     </article>
   </section>
+  <script>
+    
+  </script>
 </div>
 </div>
