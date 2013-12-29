@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20131228033657) do
 
-  create_table "book_images", force: true do |t|
-    t.string   "name"
-    t.string   "content_type"
-    t.binary   "data",         limit: 1048576
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "books", force: true do |t|
     t.string   "title"
     t.string   "author"
