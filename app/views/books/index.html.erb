@@ -24,8 +24,22 @@
     <% end %>
   </div>
   <script>
-    $( "#new-book" ).click(function() {
-      alert("clicked.");
+    $(function() {
+      $( "#dialog-form" ).dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 500
+        },
+        hide: {
+          effect: "explode",
+          duraction: 500
+        }
+      });
+
+      $( "#new-book" ).click(function() {
+        $( "#dialog-form" ).dialog( "open" );
+      });
     });
   </script>
 </div>
