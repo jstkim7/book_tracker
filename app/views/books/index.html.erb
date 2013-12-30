@@ -17,8 +17,16 @@
       </svg>
     </article>
   </section>
+  <div id="dialog-form" title="Create new book">
+    <%= form_for(@book) do |f| %>
+      <%= f.label :title %></br>
+      <%= f.text_field :title %>
+    <% end %>
+  </div>
   <script>
-    
+    $( "#new-book" ).click(function() {
+      alert("clicked.");
+    });
   </script>
 </div>
 </div>
