@@ -32,6 +32,10 @@
       <%= f.text_area :description, cols: '30', rows: '10' %>
     </p>
     <p>
+      <%= f.label :PDF_File %></br>
+      <%= f.file_field :PDF_File %>
+    </p>
+    <p>
       <%= f.button %>
     </p>
     <% end %>
