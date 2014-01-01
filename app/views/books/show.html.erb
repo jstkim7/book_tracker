@@ -1,1 +1,19 @@
 <h1><%= @book.title %></h1>
+<canvas id="the-canvas" style="border:1px solid black"></canvas>
+  <script type="text/javascript">
+    var url = 'http://cdn.mozilla.net/pdfjs/<%= "helloworld" %>.pdf';
+    PDFJS.disableWorker = true;
+    PDFJS.getDocument(url).then(function getPdfHelloWorld(pdf) {
+      pdf.getPage(1).then(function getPageHelloWorld(page) {
+        var scale = 1;
+        var viewport = page.getViewport(scale);
+
+        var canvas = document.getElementById('the-canvas');
+        var context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        page.render({canvasContext: context, viewport: viewport});
+      });
+    });
+  </script>
