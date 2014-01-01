@@ -6,8 +6,8 @@
   <div class="books">
   <section>
     <% @books.each do |book| %>
-      <article class="h <%= @colors.next %>"  >
-        <%= book.title %></br>
+      <article class="h <%= @colors.next %>">
+        <%= link_to book.title, book_path(book) %></br>
         <%= book.author %>
       </article>
     <% end %>
