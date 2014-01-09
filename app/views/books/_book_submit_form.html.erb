@@ -1,5 +1,8 @@
 <div id="dialog-form" title="Create new book">
   <%= form_for(:book, html: {multipart: true}) do |f| %>
+  <% if @book.errors.any? %>
+  <%= "errors." %>
+  <% end %>
   <p>
     <%= f.label :title %></br>
     <%= f.text_field :title %>
