@@ -15,6 +15,10 @@
     <%= f.text_area :description, cols: '30', rows: '10' %>
   </p>
   <p>
+    <%= f.label :pdf_book %>
+    <%= f.file_field :pdf_book %>
+  </p>
+  <p>
     <%= f.button %>
   </p>
   <% end %>

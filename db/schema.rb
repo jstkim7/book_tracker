@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140110025739) do
+ActiveRecord::Schema.define(version: 20140110031427) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(version: 20140110025739) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "pdf_file_file_name"
+    t.string   "pdf_file_content_type"
+    t.integer  "pdf_file_file_size"
+    t.datetime "pdf_file_updated_at"
   end
 
   create_table "users", force: true do |t|
